@@ -5,7 +5,7 @@ module "mysg" {
 
 module "myec2" {
   source        = "../modules/ec2"
-  instance_type = "t2.micro"
+  instance_type = "t3.micro"
   ec2_count     = 1
   keyname       = "pretty"
   sg_id         = [module.mysg.security_group_id]
