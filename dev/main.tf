@@ -14,8 +14,8 @@ module "mysg" {
 module "myec2_webapp" {
   source        = "../modules/ec2"
   instance_type = "t3.micro"
-  ec2_count     = 2
-  keyname       = "bibek"
+  ec2_count     = 1
+  keyname       = "pretty"
   sg_id         = [module.mysg.security_group_id]
   subnets       = module.myvpc.public_subnets
   instance_name = "WebApp"
@@ -24,8 +24,8 @@ module "myec2_webapp" {
 module "myec2_dataapp" {
   source        = "../modules/ec2"
   instance_type = "t3.micro"
-  ec2_count     = 2
-  keyname       = "gigi"
+  ec2_count     = 1
+  keyname       = "pretty"
   sg_id         = [module.mysg.security_group_id]
   subnets       = module.myvpc.private_subnets
   instance_name = "DataApp"
