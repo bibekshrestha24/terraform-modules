@@ -25,7 +25,7 @@ resource "aws_instance" "mywebserver" {
   instance_type          = var.instance_type
   key_name               = var.keyname
   vpc_security_group_ids = var.sg_id
-  #subnet_id              = element(var.subnets, count.index)
+  subnet_id              = element(var.subnets, count.index)
 
   user_data = <<-EOF
                 #! /bin/bash
