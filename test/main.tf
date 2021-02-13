@@ -9,5 +9,5 @@ module "myec2" {
   ec2_count     = 1
   keyname       = "pretty"
   sg_id         = [module.mysg.security_group_id]
-  instance_name = "Jenkins Server"
+  instance_name = "Jenkins"
 }
