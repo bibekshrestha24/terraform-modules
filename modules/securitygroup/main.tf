@@ -3,7 +3,7 @@
 resource "aws_security_group" "allow_web1" {
   name        = "allow_web1"
   description = "Allow web inbound traffic"
-  vpc_id = var.vpc
+  #vpc_id = var.vpc
 
   #inbound traffic
   ingress {

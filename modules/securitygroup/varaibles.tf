@@ -2,4 +2,4 @@ variable "sgtag" {
   type = string
 }
 
-variable "vpc" {}
+#variable "vpc" {}

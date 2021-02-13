@@ -13,7 +13,7 @@ variable "sg_id" {}
 
 variable "keyname" {}
 
-variable "subnets" {}
+#variable "subnets" {}
 
 variable "instance_name" {}
 
